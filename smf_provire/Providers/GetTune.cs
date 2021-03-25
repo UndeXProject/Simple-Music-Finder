@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Simple_Music_Finder.Classes.Providers
 {
-    class GetTune : Provider
+    public class GetTune : Provider
     {
         public override string Name { get; internal set; }
         public override Dictionary<string, string> ProviderData { get; internal set; }

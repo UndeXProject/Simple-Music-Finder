@@ -12,9 +12,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Classes\" />
     <Folder Include="Resources\Images\" />
     <Folder Include="Resources\Styles\" />
     <Folder Include="Resources\Fonts\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\smf_provire\smf_provire.csproj" />
   </ItemGroup>
 
 </Project>

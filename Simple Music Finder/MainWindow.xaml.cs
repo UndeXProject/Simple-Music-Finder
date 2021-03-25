@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Simple_Music_Finder.Classes;
+using Simple_Music_Finder.Classes.Providers;
 
 namespace Simple_Music_Finder
 {
@@ -24,7 +25,7 @@ namespace Simple_Music_Finder
         public MainWindow()
         {
             InitializeComponent();
-            Provider.Load(new Classes.Providers.GetTune());
+            Provider.Load(new GetTune());
             var Providers = Provider.GetList();
             foreach(Provider provider in Providers)
             {
@@ -32,6 +33,12 @@ namespace Simple_Music_Finder
                 ProviderTitle.Text = provider.Name;
                 ProvidersListBox.Items.Add(ProviderTitle);
             }
+            string Version = "V: ";
+            foreach(int ver in Provider.Version)
+            {
+                Version += ver.ToString() + ".";
+            }
+            MessageBox.Show(Version);
         }
     }
 }

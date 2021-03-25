@@ -1,26 +1,31 @@
-п»їusing System.Collections.Generic;
+using System.Collections.Generic;
 
 namespace Simple_Music_Finder.Classes
 {
-    abstract class Provider
+    public abstract class Provider
     {
+        public static int[] Version { get
+                {
+                    return new int[]{1,0,0};
+                }
+        }
         /// <summary>
-        /// РРјСЏ РїСЂРѕРІР°Р№РґРµСЂР°
+        /// Имя провайдера
         /// </summary>
         public abstract string Name { get; internal set; }
         /// <summary>
-        /// РРЅРёС†РёР°Р»РёР·Р°С†РёСЏ РїР»Р°РіРёРЅР°
+        /// Инициализация плагина
         /// </summary>
         public abstract void Init();
         /// <summary>
-        /// РџРѕРёСЃРє РїРѕ С‚РµРєСЃС‚Сѓ
+        /// Поиск по тексту
         /// </summary>
-        /// <param name="Text">РўРµРєСЃС‚ РґР»СЏ РїРѕРёСЃРєР°</param>
+        /// <param name="Text">Текст для поиска</param>
         /// <returns></returns>
         public abstract string FindByText(string Text);
         /// <summary>
-        /// Р”Р°РЅРЅС‹Рµ Рѕ РїР»Р°РіРёРЅРµ
-        /// РћР±СЏР·Р°С‚РµР»СЊРЅС‹Рµ РєР»СЋС‡Рё: author, version, url
+        /// Данные о плагине
+        /// Обязательные ключи: author, version, url
         /// </summary>
         public abstract Dictionary<string, string> ProviderData { get; internal set; }
         private static List<Provider> ProvidersList = new List<Provider>();

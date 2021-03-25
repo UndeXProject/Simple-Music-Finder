@@ -12,8 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Simple_Music_Finder.Classes;
-using Simple_Music_Finder.Classes.Providers;
+using Simple_Music_Finder.Providers;
+using Simple_Music_Finder.Providers.List;
 
 namespace Simple_Music_Finder
 {
@@ -33,11 +33,12 @@ namespace Simple_Music_Finder
                 ProviderTitle.Text = provider.Name;
                 ProvidersListBox.Items.Add(ProviderTitle);
             }
-            string Version = "V: ";
+            string Version = "Provider version: ";
             foreach(int ver in Provider.Version)
             {
                 Version += ver.ToString() + ".";
             }
+            Version = Version.Remove(Version.Length-1);
             MessageBox.Show(Version);
         }
     }

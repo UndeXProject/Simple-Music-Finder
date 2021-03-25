@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\smf_provire\smf_provire.csproj" />
+    <ProjectReference Include="..\smf_provire\smf_provide.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Simple_Music_Finder.Classes
+namespace Simple_Music_Finder.Providers
 {
     public abstract class Provider
     {

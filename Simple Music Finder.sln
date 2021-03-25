@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simple Music Finder", "Simple Music Finder\Simple Music Finder.csproj", "{366AE60F-A19F-4B48-A050-7531C7A4933F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smf_provire", "smf_provire\smf_provire.csproj", "{60932F1E-E7F1-45A5-98A0-3E43BBB9E2BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "smf_provide", "smf_provire\smf_provide.csproj", "{60932F1E-E7F1-45A5-98A0-3E43BBB9E2BF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

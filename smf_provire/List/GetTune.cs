@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Simple_Music_Finder.Classes.Providers
+namespace Simple_Music_Finder.Providers.List
 {
     public class GetTune : Provider
     {
